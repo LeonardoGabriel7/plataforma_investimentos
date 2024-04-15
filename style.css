@@ -126,3 +126,13 @@ main {
     justify-content: flex-start;
     gap: 14px;
 }
+
+
+/*  INVESTIMENTOS */
+
+.bodyInvestimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
