@@ -144,3 +144,28 @@ span{
     justify-content: center;
     align-items: center;
 }
+ 
+.bodyInvestimentos input{
+    border-radius: 5px;
+    padding: 3px;
+    background-color: rgba(128, 128, 128, 0.055);
+    border-color:#B72778
+}
+
+h1.tituloInvestimento{
+    margin-bottom: 2px;
+}
+
+p.p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+button.btnGrafico{
+width: 140px;
+height: 37px;  
+border-radius: 100px;
+background-color: #B72778;  
+border: none;
+color: white;
+}
