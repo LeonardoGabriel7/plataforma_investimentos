@@ -25,7 +25,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     background-color: #ffffff;
-    height: 100vh;
+    height: 95vh;
     border-radius: 0px 18px 18px 0px;
     position: relative;
     transition: all .5s;
