@@ -86,11 +86,11 @@ main {
     position: absolute;
     top: 30px;
     right: -10px;
-    background-color: #702DFA;
-    color: #e3e9f7;
+    background-color: #4F5CC6;
+    color: #0000009d;
     border-radius: 100%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border: none;
     cursor: pointer;
 }
