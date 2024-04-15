@@ -149,7 +149,7 @@ span{
     border-radius: 5px;
     padding: 3px;
     background-color: rgba(128, 128, 128, 0.055);
-    border-color:#B72778
+    border-color:#702DFA;
 }
 
 h1.tituloInvestimento{
@@ -165,7 +165,7 @@ button.btnGrafico{
 width: 140px;
 height: 37px;  
 border-radius: 100px;
-background-color: #B72778;  
+background-color:#702DFA; 
 border: none;
 color: white;
 }
