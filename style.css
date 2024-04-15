@@ -37,7 +37,7 @@ main {
     padding: 12px;
 }
 
-#side_items {
+#menuLateralCompleto {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -55,7 +55,7 @@ main {
 }
 
 .itemDaDash:hover:not(.active),
-#logout_btn:hover {
+#sair_btn:hover {
     background-color: #e3e9f7;
 }
 
@@ -79,12 +79,12 @@ main {
     height: 20px;
 }
 
-#logout {
+#sair {
     border-top: 1px solid #e3e9f7;
     padding: 12px;
 }
 
-#logout_btn {
+#sair_btn {
     border: none;
     padding: 12px;
     font-size: 14px;
