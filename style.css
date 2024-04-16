@@ -169,41 +169,10 @@ background-color:#702DFA;
 border: none;
 color: white;
 
-}.bodyInvestimentos {
-    height: 850px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Adicionado para centralizar o conteúdo interno */
-    padding: 10px; /* Adicionado para espaçamento interno */
-    margin-left: -20%;
-    
 }
 
-.bodyInvestimentos input {
-    border-radius: 5px;
-    padding: 3px;
-    background-color: rgba(128, 128, 128, 0.055);
-    border-color: #702DFA;
-    margin-bottom: 10px; /* Adicionado para espaçamento entre os campos */
+#myChart {
+    max-width: 300px; /* Defina a largura máxima desejada */
+    max-height: 300px; /* Defina a altura máxima desejada */
+    margin: 20px auto; /* Centralize o gráfico horizontalmente e adicione um espaço acima e abaixo */
 }
-
-h1.tituloInvestimento {
-    margin-bottom: 5px;
-}
-
-p.p {
-    margin-bottom: 15px;
-}
-
-button.btnGrafico {
-    width: 140px;
-    height: 37px;
-    border-radius: 100px;
-    background-color: #702DFA;
-    border: none;
-    color: white;
-    margin-bottom: 10px; /* Adicionado para espaçamento entre o botão e o gráfico */
-}
-
