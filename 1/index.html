@@ -1,42 +1,62 @@
-document.getElementById('open_btn').addEventListener('click', function () {
-    document.getElementById('menu').classList.toggle('open-sidebar');
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Investimentos</title>
+    <!-- Adicione o link para o Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Gráfico de Investimentos</h1>
+    <div>
+        <label for="rendaFixa">Renda Fixa:</label>
+        <input type="number" id="rendaFixa" value="0">
+    </div>
+    <div>
+        <label for="acoes">Ações:</label>
+        <input type="number" id="acoes" value="0">
+    </div>
+    <div>
+        <label for="btc">Bitcoin:</label>
+        <input type="number" id="btc" value="0">
+    </div>
+    <div>
+        <button onclick="gerarGrafico()">Gerar Gráfico</button>
+    </div>
+    <div>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
 
-//INVESTIMENTOS
-
-//PEGAR VALOR DOS INPUTS:
-function gerarGrafico() {
+    <script>
+        function gerarGrafico() {
             var rendaFixaValue = parseFloat(document.getElementById("rendaFixa").value) || 0;
             var acoesValue = parseFloat(document.getElementById("acoes").value) || 0;
             var btcValue = parseFloat(document.getElementById("btc").value) || 0;
-            var fundoImobiliarioValue = parseFloat(document.getElementById("fundoImobiliario").value) || 0;
             
-            var totalValue = rendaFixaValue + acoesValue + btcValue + fundoImobiliarioValue;
+            var totalValue = rendaFixaValue + acoesValue + btcValue;
             
             var rendaFixaPercentage = (rendaFixaValue / totalValue) * 100;
             var acoesPercentage = (acoesValue / totalValue) * 100;
             var btcPercentage = (btcValue / totalValue) * 100;
-            var fundoImobiliarioPercentage = (fundoImobiliarioValue / totalValue) * 100;
             
             var ctx = document.getElementById('myChart').getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'pie',
                 data: {
-                    labels: ['Renda Fixa', 'Ações', 'Bitcoin', 'Fundo Imobiliário'],
+                    labels: ['Renda Fixa', 'Ações', 'Bitcoin'],
                     datasets: [{
                         label: '% de Investimento',
-                        data: [rendaFixaPercentage, acoesPercentage, btcPercentage, fundoImobiliarioPercentage],
+                        data: [rendaFixaPercentage, acoesPercentage, btcPercentage],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)'
+                            'rgba(255, 206, 86, 0.2)'
                         ],
                         borderColor: [
                             'rgba(255, 99, 132, 1)',
                             'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)'
+                            'rgba(255, 206, 86, 1)'
                         ],
                         borderWidth: 1
                     }]
@@ -54,3 +74,6 @@ function gerarGrafico() {
                 }
             });
         }
+    </script>
+</body>
+</html>

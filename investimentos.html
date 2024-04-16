@@ -77,28 +77,33 @@
         </div>
     </nav>
 
-    <main class="bodyInvestimentos">
-        <h1 class="tituloInvestimento">Investimentos</h1>
-        <p class="p">Coloque quanto você tem investido em cada área:</p>
-        <label for="rendaFixa">Renda fixa:</label>
-        <input type="number" name="rendaFixa" id="rendaFixa">
-        <br>
-        <label for="Acoes">Ações:</label>
-        <input type="number" name="Acoes" id="Acoes">
-        <br>
-        <label for="btc">Bitcoin:</label>
-        <input type="number" name="btc" id="btc">
-        <br>
-        <label for="FundoImobiliario">Fundo imobiliário:</label>
-        <input type="number" name="FundoImobiliario" id="FundoImobiliario">
-        <br>
-        <button class="btnGrafico">Gerar gráfico</button>
-        <canvas id="myChart"></canvas>
-    </main>
-
-
-
-
+    
+  
+        <div class="bodyInvestimentos">
+            <h1 class="tituloInvestimento">Gráfico de Investimentos</h1>
+            <p class="p">bla bla</p>
+            
+            <label for="rendaFixa">Renda Fixa:</label>
+            <input type="number" id="rendaFixa" value="0">
+    
+       
+            <label for="acoes">Ações:</label>
+            <input type="number" id="acoes" value="0">
+        
+       
+            <label for="btc">Bitcoin:</label>
+            <input type="number" id="btc" value="0">
+        
+        
+            <label for="fundoImobiliario">Fundo Imobiliário:</label>
+            <input type="number" id="fundoImobiliario" value="0">
+       
+       
+            <button class="" onclick="gerarGrafico()">Gerar Gráfico</button>
+        
+            <canvas id="myChart" width="100" height="200"></canvas>
+        </div>
+    </div>
 
 </body>
 </html>
