@@ -150,18 +150,21 @@ span{
     padding: 3px;
     background-color: rgba(128, 128, 128, 0.055);
     border-color:#702DFA;
+    margin-bottom: 10px;
+
 }
 
 h1.tituloInvestimento{
     margin-bottom: 2px;
     margin-left:-15px;
-    margin-top: -40px;
+    margin-top: 25px;
 
 }
 
 p.p{
     text-align: center;
     margin-bottom: 15px;
+    color: #702DFA;
 }
 
 button.btnGrafico{
@@ -171,11 +174,11 @@ border-radius: 100px;
 background-color:#702DFA; 
 border: none;
 color: white;
-
+margin-top: 17px;
 }
 
 #myChart {
-    max-width: 300px; /* Defina a largura máxima desejada */
+    max-width: 270px; /* Defina a largura máxima desejada */
     max-height: 300px; /* Defina a altura máxima desejada */
     margin: 20px auto; /* Centralize o gráfico horizontalmente e adicione um espaço acima e abaixo */
 }

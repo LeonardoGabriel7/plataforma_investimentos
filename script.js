@@ -27,16 +27,16 @@ function gerarGrafico() {
                         label: '% de Investimento',
                         data: [rendaFixaPercentage, acoesPercentage, btcPercentage, fundoImobiliarioPercentage],
                         backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)'
+                            '#00009C',
+                            'rgb(255,0,0) ',
+                            '	#00FF00',
+                            '	#fff'
                         ],
                         borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)'
+                            '#000',
+                            '#000',
+                            '#000',
+                            '#000'
                         ],
                         borderWidth: 1
                     }]
