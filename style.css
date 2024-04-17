@@ -143,6 +143,10 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    padding-left: calc(55px + 20px);
 }
  
 .bodyInvestimentos input{
