@@ -6,26 +6,26 @@ document.getElementById('open_btn').addEventListener('click', function () {
 
 //PEGAR VALOR DOS INPUTS:
 function gerarGrafico() {
-            var rendaFixaValue = parseFloat(document.getElementById("rendaFixa").value) || 0;
-            var acoesValue = parseFloat(document.getElementById("acoes").value) || 0;
-            var btcValue = parseFloat(document.getElementById("btc").value) || 0;
-            var fundoImobiliarioValue = parseFloat(document.getElementById("fundoImobiliario").value) || 0;
+            let rendaFixaValue = parseFloat(document.getElementById("rendaFixa").value) || 0;
+            let acoesValue = parseFloat(document.getElementById("acoes").value) || 0;
+            let btcValue = parseFloat(document.getElementById("btc").value) || 0;
+            let fundoImobiliarioValue = parseFloat(document.getElementById("fundoImobiliario").value) || 0;
             
-            var totalValue = rendaFixaValue + acoesValue + btcValue + fundoImobiliarioValue;
+            let totalValue = rendaFixaValue + acoesValue + btcValue + fundoImobiliarioValue;
             
-            var rendaFixaPercentage = (rendaFixaValue / totalValue) * 100;
-            var acoesPercentage = (acoesValue / totalValue) * 100;
-            var btcPercentage = (btcValue / totalValue) * 100;
-            var fundoImobiliarioPercentage = (fundoImobiliarioValue / totalValue) * 100;
+            let rendaFixaPorcentage = (rendaFixaValue / totalValue) * 100;
+            let acoesPorcentage = (acoesValue / totalValue) * 100;
+            let btcPorcentage = (btcValue / totalValue) * 100;
+            let fundoImobiliarioPorcentage = (fundoImobiliarioValue / totalValue) * 100;
             
-            var ctx = document.getElementById('myChart').getContext('2d');
-            var myChart = new Chart(ctx, {
+            let ctx = document.getElementById('myChart').getContext('2d');
+            let myChart = new Chart(ctx, {
                 type: 'pie',
                 data: {
                     labels: ['Renda Fixa', 'Ações', 'Bitcoin', 'Fundo Imobiliário'],
                     datasets: [{
                         label: '% de Investimento',
-                        data: [rendaFixaPercentage, acoesPercentage, btcPercentage, fundoImobiliarioPercentage],
+                        data: [rendaFixaPorcentage, acoesPorcentage, btcPorcentage, fundoImobiliarioPorcentage],
                         backgroundColor: [
                             '#00009C',
                             'rgb(255,0,0) ',
