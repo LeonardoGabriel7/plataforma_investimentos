@@ -152,7 +152,7 @@ span{
     padding-left: calc(65px + 20px);
 }
  
-.bodyInvestimentos input{
+ input{
     border-radius: 5px;
     padding: 3px;
     background-color: rgba(128, 128, 128, 0.055);
@@ -192,3 +192,8 @@ margin-top: 17px;
 }
 
 
+/*  Calculadora de juros */
+
+main.container{
+   
+}
