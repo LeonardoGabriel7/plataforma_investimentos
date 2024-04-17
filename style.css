@@ -151,7 +151,7 @@ span{
     background-color: rgba(128, 128, 128, 0.055);
     border-color:#702DFA;
     margin-bottom: 10px;
-    
+    width: 150px;
 
 }
 
@@ -183,3 +183,5 @@ margin-top: 17px;
     max-height: 300px; /* Defina a altura máxima desejada */
     margin: 20px auto; /* Centralize o gráfico horizontalmente e adicione um espaço acima e abaixo */
 }
+
+
