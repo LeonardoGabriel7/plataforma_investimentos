@@ -59,11 +59,17 @@ function gerarGrafico() {
   
         // CALCULADORA DE JUROS COMPOSTOS
 
-   document.getElementById("btnCalcular").addEventListener('click', function(){
-        const  value = document.getElementById('value').value;
-        const  taxa = document.getElementById('taxa').value / 100;
-        const  tempo = document.getElementById('tempo').value;
-    
-        const total = value * (1 + taxa)**tempo;
-        document.getElementById("total").innerHTML = ("R$" + total.toFixed(2)).replace('.', ",");
-    })    
+        document.getElementById("btnCalcular").addEventListener('click', function(){
+            const value = parseFloat(document.getElementById('value').value); // Valor inicial
+            const taxa = parseFloat(document.getElementById('taxa').value) / 100; // Taxa de juros (em decimal)
+            const tempo = parseInt(document.getElementById('tempo').value); // Número de períodos
+            const aporteMensal = parseFloat(document.getElementById('aporte').value); // Aporte mensal
+        
+            let total = value; // Valor inicial
+        
+            for (let i = 0; i < tempo; i++) {
+                total = total * (1 + taxa) + aporteMensal; // Adiciona juros compostos e aportes mensais
+            }
+        
+            document.getElementById("total").innerHTML = "R$" + total.toFixed(2).replace('.', ",");
+        });
