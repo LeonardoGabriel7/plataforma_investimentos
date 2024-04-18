@@ -182,7 +182,7 @@ border-radius: 100px;
 background-color:#702DFA; 
 border: none;
 color: white;
-margin-top: 17px;
+margin-top: 10px;
 }
 
 #myChart {
@@ -218,8 +218,9 @@ h1.calculadorah1{
 
 span#total{
     color:#B72778;
-    margin-left: 25%;
+   
     font-size: 19px;
+    text-align: center;
     
 }
 
