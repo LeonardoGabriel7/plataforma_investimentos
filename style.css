@@ -165,7 +165,7 @@ span{
 h1.tituloInvestimento{
     margin-bottom: 2px;
     margin-left:-15px;
-    margin-top: 25px;
+    margin-top: 2px;
 
 }
 
@@ -195,5 +195,23 @@ margin-top: 17px;
 /*  Calculadora de juros */
 
 main.container{
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    padding-left: calc(75px + 20px);
+
+}
+
+div.label1{
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+h1.calculadorah1{
+    font-size: 30px;
+    margin-bottom: 20px;
 }
