@@ -212,11 +212,17 @@ div.label1{
 }
 
 h1.calculadorah1{
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 27px;
+    margin-bottom: 15px;
 }
 
 span#total{
-    color: #0a0a0a;
-    margin-left: 26%;
+    color:#B72778;
+    margin-left: 25%;
+    font-size: 19px;
+    
+}
+
+h1.result{
+    font-size: 25px;
 }
