@@ -215,3 +215,8 @@ h1.calculadorah1{
     font-size: 30px;
     margin-bottom: 20px;
 }
+
+span#total{
+    color: #0a0a0a;
+    margin-left: 26%;
+}
