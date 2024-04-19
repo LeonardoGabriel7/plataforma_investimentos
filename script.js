@@ -63,9 +63,14 @@ function gerarGrafico() {
             const value = parseFloat(document.getElementById('value').value); // Valor inicial
             const taxa = parseFloat(document.getElementById('taxa').value) / 100; // Taxa de juros (em decimal)
             const tempo = parseInt(document.getElementById('tempo').value); // Número de períodos
-            const aporteMensal = parseFloat(document.getElementById('aporte').value); // Aporte mensal
+            let aporteMensal = parseFloat(document.getElementById('aporte').value); // Aporte mensal
         
             let total = value; // Valor inicial
+        
+            // Verifica se o valor do aporte mensal é vazio
+            if (isNaN(aporteMensal)) {
+                aporteMensal = 0; // Define o aporte mensal como zero se for vazio
+            }
         
             for (let i = 0; i < tempo; i++) {
                 total = total * (1 + taxa) + aporteMensal; // Adiciona juros compostos e aportes mensais
