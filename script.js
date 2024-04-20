@@ -78,3 +78,6 @@ function gerarGrafico() {
         
             document.getElementById("total").innerHTML = "R$" + total.toFixed(2).replace('.', ",");
         });
+
+
+        //GASTO MENSAL
