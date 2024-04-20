@@ -231,6 +231,51 @@ h1.result{
 
 /* GASTO MENSAL */ 
 
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+    width: 100%; 
+}
+
+
 span.gastosSpan{
     color: #B72778;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto; /* Isso centralizará horizontalmente */
+    text-align: center;
+    
+}
+
+div.explicacaoGastos{
+    margin-bottom: 7px;
+}
+
+.explicacaoGastosp {
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+}
+
+.explicacaoGastosp .gastosSpan {
+    display: inline-block; /* Isso permite a centralização horizontal */
+    text-align: center; /* Isso centraliza o texto dentro do span */
+    width: 100%; /* Garante que o span ocupe toda a largura disponível */
+}
+
+span.a{
+    color: #702DFA;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.explicacaoGastosp2{
+    text-align: center;
+    font-weight: bold;
+    color: #702DFA;
+    margin-top: 10px;
 }
