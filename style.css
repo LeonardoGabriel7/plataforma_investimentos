@@ -311,3 +311,11 @@ button.btnVoltar{
     margin-top: 10px;
 }
 
+#resultadoDoGastoMensal {
+    
+    width: 200px; /* Defina a largura desejada */
+    margin: auto; /* Centralize horizontalmente */
+    text-align: center;
+    color: #B72778;
+    font-weight: 700;
+}
