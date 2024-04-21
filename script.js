@@ -81,3 +81,8 @@ function gerarGrafico() {
 
 
         //GASTO MENSAL
+        document.getElementById("custoFixo").value
+        document.getElementById("custoFixo").value
+        document.getElementById("custoFixo").value
+        document.getElementById("custoFixo").value
+        document.getElementById("custoFixo").value
