@@ -81,8 +81,11 @@ function gerarGrafico() {
 
 
         //GASTO MENSAL
+
+        function calcular(){
         document.getElementById("custoFixo").value
-        document.getElementById("custoFixo").value
-        document.getElementById("custoFixo").value
-        document.getElementById("custoFixo").value
-        document.getElementById("custoFixo").value
+        document.getElementById("conforto").value
+        document.getElementById("metas").value
+        document.getElementById("prazeres").value
+        document.getElementById("conhecimento").value
+        }
