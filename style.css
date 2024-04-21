@@ -243,9 +243,20 @@ h1.result{
     width: 100%; 
 }
 
+.container2{
+    background-color: #000000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 10px 10px #702DFA;
+}
+
+
 
 span.gastosSpan{
-    color: #B72778;
+    color: #702DFA;
     font-weight: bold;
     display: block;
     margin: 0 auto; /* Isso centralizará horizontalmente */
@@ -275,8 +286,9 @@ span.a{
 
 .explicacaoGastosp2{
     text-align: center;
+    font-size: 16px;
     font-weight: bold;
-    color: #702DFA;
-    margin-top: 10px;
+    color: #000;
+    margin-top: 15px;
 }
  
