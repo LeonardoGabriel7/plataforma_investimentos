@@ -83,16 +83,29 @@ function gerarGrafico() {
         //GASTO MENSAL
 
         function calcular(){
-        let custoFixo = parseFloat(document.getElementById("custoFixo").value)
-        let conforto = parseFloat(document.getElementById("conforto").value)
-        let metas = parseFloat(document.getElementById("metas").value)
-        let prazeres = parseFloat(document.getElementById("prazeres").value)
-        let conhecimento = parseFloat(document.getElementById("conhecimento").value)
-
-        let gastoMensalTotal = (custoFixo + conforto + metas + prazeres + conhecimento)
-
-        document.getElementById("resultadoDoGastoMensal").innerHTML= "Seu gasto mensal é de <br> R$"+ gastoMensalTotal + ",00"
+            // Obtendo os valores dos campos de entrada
+            let custoFixo = parseFloat(document.getElementById("custoFixo").value);
+            let conforto = parseFloat(document.getElementById("conforto").value);
+            let metas = parseFloat(document.getElementById("metas").value);
+            let prazeres = parseFloat(document.getElementById("prazeres").value);
+            let conhecimento = parseFloat(document.getElementById("conhecimento").value);
+        
+            // Verificando se algum campo está vazio e definindo o valor como 0, se necessário
+            if (isNaN(custoFixo)) custoFixo = 0;
+            if (isNaN(conforto)) conforto = 0;
+            if (isNaN(metas)) metas = 0;
+            if (isNaN(prazeres)) prazeres = 0;
+            if (isNaN(conhecimento)) conhecimento = 0;
+        
+            // Calculando o gasto mensal total
+            let gastoMensalTotal = custoFixo + conforto + metas + prazeres + conhecimento;
+        
+            // Exibindo o resultado
+            document.getElementById("resultadoDoGastoMensal").innerHTML = "Seu gasto mensal é de <br> R$ " + gastoMensalTotal.toFixed(2).replace(
+                '.', ","
+            ) 
         }
 
+        
        
     
