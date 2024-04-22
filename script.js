@@ -82,7 +82,7 @@ function gerarGrafico() {
 
         //GASTO MENSAL
 
-        function calcular(){
+        function calcular() {
             // Obtendo os valores dos campos de entrada
             let custoFixo = parseFloat(document.getElementById("custoFixo").value);
             let conforto = parseFloat(document.getElementById("conforto").value);
@@ -100,11 +100,14 @@ function gerarGrafico() {
             // Calculando o gasto mensal total
             let gastoMensalTotal = custoFixo + conforto + metas + prazeres + conhecimento;
         
+            // Salvando o resultado no localStorage
+            localStorage.setItem('gastoMensalTotal', gastoMensalTotal);
+        
             // Exibindo o resultado
-            document.getElementById("resultadoDoGastoMensal").innerHTML = "Seu gasto mensal é de <br> R$ " + gastoMensalTotal.toFixed(2).replace(
-                '.', ","
-            ) 
+            document.getElementById("resultadoDoGastoMensal").innerHTML = "Seu gasto mensal é de <br> R$ " + gastoMensalTotal.toFixed(2).replace('.', ",");
         }
+
+
 
         
        
