@@ -106,6 +106,14 @@ function gerarGrafico() {
             ) 
         }
 
-        
+
+//SALVANDO NO LOCALSRORAGE
+
+         document.getElementById("custoFixo").value = lo
+        document.getElementById("conforto").value
+        document.getElementById("metas").value
+        document.getElementById("prazeres").value
+        document.getElementById("conhecimento").value
+    
        
     
