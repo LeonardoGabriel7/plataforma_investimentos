@@ -82,38 +82,49 @@ function gerarGrafico() {
 
         //GASTO MENSAL
 
-        function calcular(){
-            // Obtendo os valores dos campos de entrada
-            let custoFixo = parseFloat(document.getElementById("custoFixo").value);
-            let conforto = parseFloat(document.getElementById("conforto").value);
-            let metas = parseFloat(document.getElementById("metas").value);
-            let prazeres = parseFloat(document.getElementById("prazeres").value);
-            let conhecimento = parseFloat(document.getElementById("conhecimento").value);
-        
-            // Verificando se algum campo está vazio e definindo o valor como 0, se necessário
-            if (isNaN(custoFixo)) custoFixo = 0;
-            if (isNaN(conforto)) conforto = 0;
-            if (isNaN(metas)) metas = 0;
-            if (isNaN(prazeres)) prazeres = 0;
-            if (isNaN(conhecimento)) conhecimento = 0;
-        
-            // Calculando o gasto mensal total
-            let gastoMensalTotal = custoFixo + conforto + metas + prazeres + conhecimento;
-        
-            // Exibindo o resultado
-            document.getElementById("resultadoDoGastoMensal").innerHTML = "Seu gasto mensal é de <br> R$ " + gastoMensalTotal.toFixed(2).replace(
-                '.', ","
-            ) 
-        }
+           // Função para carregar os dados do localStorage
+    function carregarDados() {
+        document.getElementById('custoFixo').value = localStorage.getItem('custoFixo') || '';
+        document.getElementById('conforto').value = localStorage.getItem('conforto') || '';
+        document.getElementById('metas').value = localStorage.getItem('metas') || '';
+        document.getElementById('prazeres').value = localStorage.getItem('prazeres') || '';
+        document.getElementById('conhecimento').value = localStorage.getItem('conhecimento') || '';
+    }
 
+    // Chama a função para carregar os dados ao carregar a página
+    carregarDados();
 
-//SALVANDO NO LOCALSRORAGE
-
-         document.getElementById("custoFixo").value = lo
-        document.getElementById("conforto").value
-        document.getElementById("metas").value
-        document.getElementById("prazeres").value
-        document.getElementById("conhecimento").value
+    // Função para calcular o gasto mensal e salvar os dados no localStorage
+    function calcular() {
+        // Obtendo os valores dos campos de entrada
+        let custoFixo = parseFloat(document.getElementById("custoFixo").value);
+        let conforto = parseFloat(document.getElementById("conforto").value);
+        let metas = parseFloat(document.getElementById("metas").value);
+        let prazeres = parseFloat(document.getElementById("prazeres").value);
+        let conhecimento = parseFloat(document.getElementById("conhecimento").value);
     
+        // Verificando se algum campo está vazio e definindo o valor como 0, se necessário
+        if (isNaN(custoFixo)) custoFixo = 0;
+        if (isNaN(conforto)) conforto = 0;
+        if (isNaN(metas)) metas = 0;
+        if (isNaN(prazeres)) prazeres = 0;
+        if (isNaN(conhecimento)) conhecimento = 0;
+    
+        // Calculando o gasto mensal total
+        let gastoMensalTotal = custoFixo + conforto + metas + prazeres + conhecimento;
+    
+        // Exibindo o resultado
+        document.getElementById("resultadoDoGastoMensal").innerHTML = "Seu gasto mensal é de <br> R$ " + gastoMensalTotal.toFixed(2).replace(
+            '.', ","
+        );
+
+        // Salvando os dados no localStorage
+        localStorage.setItem('custoFixo', custoFixo);
+        localStorage.setItem('conforto', conforto);
+        localStorage.setItem('metas', metas);
+        localStorage.setItem('prazeres', prazeres);
+        localStorage.setItem('conhecimento', conhecimento);
+    }
+  
        
     
