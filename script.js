@@ -105,9 +105,15 @@ function gerarGrafico() {
         
             // Exibindo o resultado
             document.getElementById("resultadoDoGastoMensal").innerHTML = "Seu gasto mensal é de <br> R$ " + gastoMensalTotal.toFixed(2).replace('.', ",");
+
+
+            
         }
 
+
+
         
+
 
 
         
